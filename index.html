@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabeellada Hoose TV - Dhacdooyinka Gudaha Dalka iyo Dibada</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        darkNavy: '#050B14',
+                        gold: '#D4AF37',
+                        goldHover: '#C5A028',
+                        tvGreen: '#008751',
+                        tvBlue: '#0055A5'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #0B132B;
+            color: #FFFFFF;
+            font-family: system-ui, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <header class="sticky top-0 z-50 bg-[#050B14] border-b border-gray-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="showTab('home')">
+                    <div class="bg-gradient-to-r from-tvBlue to-tvGreen text-white font-extrabold px-3 py-2 rounded-lg text-xl shadow flex items-center gap-1">
+                        <span class="text-blue-300">S</span>
+                        <span class="text-white">H</span>
+                        <span class="text-green-300">TV</span>
+                    </div>
+
+                    <div>
+                        <span class="block text-lg font-extrabold tracking-wider text-white">
+                            Shabeellada Hoose TV
+                        </span>
+                        <span class="block text-[11px] text-green-400 font-medium">
+                            "Dhacdooyinka Gudaha Dalka iyo Dibada"
+                        </span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                    <button onclick="showTab('home')" class="nav-link text-gold hover:text-gold transition">
+                        HOME
+                    </button>
+
+                    <button onclick="showTab('news')" class="nav-link text-gray-300 hover:text-gold transition">
+                        WARARKA
+                    </button>
+
+                    <button onclick="showTab('wekapidea')" class="nav-link text-gray-300 hover:text-gold transition">
+                        WEKAPIDEA
+                    </button>
+
+                    <button onclick="showTab('login')" class="nav-link bg-gold text-darkNavy px-4 py-2 rounded-lg font-bold hover:bg-goldHover transition">
+                        ADMIN LOGIN
+                    </button>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4">
+
+        <div id="tab-home" class="tab-content space-y-12">
+
+            <div class="text-center py-16 bg-gradient-to-r from-darkNavy via-navy to-darkNavy rounded-2xl border border-gray-800 shadow-xl px-4">
+
+                <span class="bg-tvGreen/20 text-green-400 border border-tvGreen/40 px-4 py-1.5 rounded-full text-xs font-bold uppercase">
+                    WWW.ShhooseTV.com
+                </span>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white mt-4">
+                    Shabeellada Hoose TV
+                </h1>
+
+                <p class="text-gold text-lg font-medium mt-2">
+                    "Dhacdooyinka Gudaha Dalka iyo Dibada"
+                </p>
+
+                <p class="text-gray-300 text-sm max-w-2xl mx-auto mt-4">
+                    Ku soo dhowow xarunta warbaahinta ee wararka sugan iyo keydka aqooneed.
+                </p>
+
+                <div class="mt-8 flex justify-center gap-4">
+
+                    <button onclick="showTab('news')" class="bg-tvGreen text-white font-bold px-8 py-3 rounded-lg shadow hover:bg-green-700 transition">
+                        Akhri Wararka
+                    </button>
+
+                    <button onclick="showTab('login')" class="border border-gold text-gold font-bold px-8 py-3 rounded-lg hover:bg-gold/10 transition">
+                        Gal Account-kaaga
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-news" class="tab-content hidden space-y-8">
+
+            <div class="border-b border-gray-800 pb-4">
+                <h2 class="text-3xl font-extrabold text-white">
+                    WARARKA
+                    <span class="text-xs bg-gold/20 text-gold px-2 py-1 rounded ml-2">
+                        Demo
+                    </span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-darkNavy border border-gray-800 rounded-xl overflow-hidden p-5 shadow">
+                    <span class="text-xs bg-tvGreen text-white font-bold px-2 py-1 rounded">
+                        Magaalo
+                    </span>
+
+                    <h3 class="text-lg font-bold text-white mt-3">
+                        Horumarinno cusub oo laga sameeyay kaabayaasha Marka
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2">
+                        Maamulka gobalka iyo bulshada ayaa si wada jir ah uga qeyb qaatay dib u dhiska waddooyinka.
+                    </p>
+                </div>
+
+                <div class="bg-darkNavy border border-gray-800 rounded-xl overflow-hidden p-5 shadow">
+
+                    <span class="text-xs bg-tvBlue text-white font-bold px-2 py-1 rounded">
+                        Dhaqaale
+                    </span>
+
+                    <h3 class="text-lg font-bold text-white mt-3">
+                        Kaluumeysatada Shabeellada Hoose oo helay qalab casri ah
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2">
+                        Mashruuc cusub oo lagu taageerayo kaluumeysatada deegaanka ayaa ka daah-furmay Baraawe.
+                    </p>
+
+                </div>
+
+                <div class="bg-darkNavy border border-gray-800 rounded-xl overflow-hidden p-5 shadow">
+
+                    <span class="text-xs bg-gold text-darkNavy font-bold px-2 py-1 rounded">
+                        Waxbarasho
+                    </span>
+
+                    <h3 class="text-lg font-bold text-white mt-3">
+                        Ardayda Gobolka oo u diyaar garoobaya imtixaanaadka
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2">
+                        Wasaaradda Waxbarashada ayaa sheegtay in diyaargarowgii dambe uu socdo.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tab-wekapidea" class="tab-content hidden space-y-8">
+
+            <div class="border-b border-gray-800 pb-4 text-center">
+
+                <h2 class="text-3xl font-extrabold text-white">
+                    WEKAPIDEA
+                </h2>
+
+                <p class="text-gold text-sm font-semibold mt-1">
+                    "Keyd aqooneed Soomaaliyeed"
+                </p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-darkNavy border border-gray-800 rounded-xl p-6 shadow">
+
+                    <span class="text-xs bg-tvGreen/30 text-green-400 px-2 py-1 rounded font-bold">
+                        Deegaan
+                    </span>
+
+                    <h3 class="text-xl font-bold text-white mt-3">
+                        Magaalada Marka
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2">
+                        Marka waa magaalo xeebeed taariikhi ah oo ah xarunta gobolka.
+                    </p>
+
+                </div>
+
+                <div class="bg-darkNavy border border-gray-800 rounded-xl p-6 shadow">
+
+                    <span class="text-xs bg-tvBlue/30 text-blue-400 px-2 py-1 rounded font-bold">
+                        Degmo
+                    </span>
+
+                    <h3 class="text-xl font-bold text-white mt-3">
+                        Baraawe
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2">
+                        Baraawe waa mid ka mid ah magaalooyinka ugu da’da weyn geeska Afrika.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tab-login" class="tab-content hidden max-w-md mx-auto py-8">
+
+            <div class="bg-darkNavy border border-gray-800 rounded-2xl p-8 shadow-2xl space-y-6">
+
+                <div class="text-center space-y-2">
+
+                    <div class="inline-block bg-tvBlue text-white font-extrabold px-3 py-1 rounded text-lg">
+                        SHTV Admin
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-white">
+                        Gal Account-kaaga
+                    </h2>
+
+                    <p class="text-xs text-gray-400">
+                        Geli Email-kaaga rasmiga ah iyo Password-kaaga
+                    </p>
+
+                </div>
+
+                <form onsubmit="handleLogin(event)" class="space-y-4">
+
+                    <div>
+
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            value="Saalimwarfaa70@gmail.com"
+                            readonly
+                            class="w-full bg-navy border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-gray-300 focus:outline-none cursor-not-allowed"
+                        >
+
+                        <span class="text-[10px] text-green-400 mt-1 block">
+                            ✓ Email-kaaga rasmiga ah waa la xiririyay
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">
+                            Password-kaaga
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Geli password-kaaga halkan..."
+                            required
+                            class="w-full bg-navy border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold"
+                        >
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="w-full bg-gold text-darkNavy font-extrabold py-3 rounded-lg hover:bg-goldHover transition shadow"
+                    >
+                        Sign In / Gali Account-ka
+                    </button>
+
+                </form>
+
+                <div
+                    id="loginSuccess"
+                    class="hidden text-center bg-tvGreen/20 border border-tvGreen text-green-300 p-3 rounded-lg text-xs font-semibold"
+                >
+                    Si guul leh ayay ku xirantahay! Welcome to Shabeellada Hoose TV Admin.
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-darkNavy border-t border-gray-800 py-8 px-4 text-center text-xs text-gray-400 mt-20 space-y-3">
+
+        <p class="text-white font-bold text-sm">
+            Shabeellada Hoose TV
+        </p>
+
+        <p>
+            <i class="fa-solid fa-globe text-gold mr-1"></i>
+            WWW.ShhooseTV.com
+            &nbsp;|&nbsp;
+            <i class="fa-solid fa-envelope text-gold mr-1"></i>
+            Saalimwarfaa70@gmail.com
+        </p>
+
+        <p class="text-gray-500">
+            &copy; 2026 Shabeellada Hoose TV. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script>
+
+        function showTab(tabName) {
+
+            document.querySelectorAll('.tab-content').forEach(el =>
+                el.classList.add('hidden')
+            );
+
+            document.getElementById('tab-' + tabName)
+                .classList.remove('hidden');
+
+            document.querySelectorAll('.nav-link').forEach(el => {
+
+                if (!el.classList.contains('bg-gold')) {
+
+                    el.classList.remove('text-gold');
+
+                    el.classList.add('text-gray-300');
+
+                }
+
+            });
+
+        }
+
+        function handleLogin(event) {
+
+            event.preventDefault();
+
+            const pass =
+                document.getElementById('loginPassword').value;
+
+            if (pass.length > 0) {
+
+                document
+                    .getElementById('loginSuccess')
+                    .classList.remove('hidden');
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
