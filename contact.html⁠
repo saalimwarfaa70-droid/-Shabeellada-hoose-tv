@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiriirka - Shabeellada Hoose TV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        darkNavy: '#050B14',
+                        gold: '#D4AF37'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-navy p-4 border-b border-gold/30 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-gold">Shabeellada Hoose TV - Xiriirka</h1>
+        <a href="index.html" class="text-sm bg-gold text-darkNavy px-3 py-1 rounded font-semibold">Bogga Hore</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto p-6 my-6 bg-darkNavy rounded-xl border border-gold/20">
+        <h2 class="text-3xl font-bold text-gold mb-4">Nala Soo Xiriir</h2>
+        <p class="text-gray-300 mb-4">Waxaad nagala soo xiriiri kartaa xarumahayaga iyo cinwaanada hoos ku qoran:</p>
+        
+        <ul class="space-y-3 text-gray-300">
+            <li><strong>Email:</strong> info@shhoosetv.com</li>
+            <li><strong>Teleefanka:</strong> +252 ...</li>
+            <li><strong>Xarunta Dhexe:</strong> Shabeellada Hoose, Soomaaliya</li>
+        </ul>
+    </main>
+
+</body>
+</html>
