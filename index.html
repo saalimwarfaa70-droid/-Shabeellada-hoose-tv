@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="so">
-<head<!-Supabase CDN -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<script src="https:/-/cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
->
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabeellada Hoose TV - Dhacdooyinka Gudaha Dalka iyo Dibada</title>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        darkNavy: '#050B14',
+                        gold: '#D4AF37',
+                        goldHover: '#C5A028',
+                        tvGreen: '#008751',
+                        tvBlue: '#0055A5'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shabeellada Hoose TV - Dhacdooyinka Gudaha Dalka iyo Dibada</title>
 
@@ -372,6 +394,14 @@
             }
 
         }
+<!-- Supabase Configuration -->
+<script>
+    const SUPABASE_URL = 'https://ihvimmiazbupeombpotb.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_fZEhm83WNjr_wDenqZD37Q_ztvSuepv';
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+</script>
+</body>
+</html>
 
     </script>
 
