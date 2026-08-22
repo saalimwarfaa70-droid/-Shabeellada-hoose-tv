@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="so">
 <head>
@@ -34,9 +35,14 @@
             <strong>Shabeellada Hoose TV</strong> waa xarun warbaahineed oo ka shaqaysa baahinta wararka sugan, dhacdooyinka gudaha dalka iyo dibadda, iyo keydinta aqoonta iyo taariikhda gobolka.
         </p>
 
-        <h3 class="text-xl font-semibold text-gold mt-6 mb-2">Taariikhda iyo Ujeeddada</h3>
+        <h3 class="text-xl font-semibold text-gold mt-6 mb-2">Taariikhda Aasaaska</h3>
         <p class="text-gray-300 mb-4">
-            Waxaa la aas-aasay si ay u noqoto muraayad ay ku daawadaan bulshada ku nool Shabeellada Hoose iyo guud ahaan Soomaaliya, iyada oo tabineysa xaqiiqooyinka taagan.
+            Shabeellada Hoose TV waxay udub-dhexaad u tahay baahinta wararka sugan iyo keydinta taariikhda iyo aqoonta gobolka. Waxaa loo aas-aasay in ay noqoto codka bulshada iyo muraayad ay ku daawadaan dhacdooyinka ka socda deegaannada Shabeellada Hoose iyo guud ahaan dalka.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gold mt-6 mb-2">Hadafka iyo Aragtida</h3>
+        <p class="text-gray-300 mb-4">
+            In la helo warbaahin xirfad leh oo hufan, taas oo soo bandhigaysa xaqiiqooyinka dhabta ah, kobcinaysa wacyiga bulshada, isla markaana ilaalinaysa hiddaha iyo taariikhda.
         </p>
 
         <h3 class="text-xl font-semibold text-gold mt-6 mb-2">Adeegyada</h3>
