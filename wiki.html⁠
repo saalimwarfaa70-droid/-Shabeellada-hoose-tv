@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia - Shabeellada Hoose TV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        darkNavy: '#050B14',
+                        gold: '#D4AF37'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-sans leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-navy p-4 border-b border-gold/30 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-gold">Shabeellada Hoose TV - Wiki</h1>
+        <a href="index.html" class="text-sm bg-gold text-darkNavy px-3 py-1 rounded font-semibold">Bogga Hore</a>
+    </header>
+
+    <!-- Main Content (Wikipedia Style) -->
+    <main class="max-w-3xl mx-auto p-6 my-6 bg-darkNavy rounded-xl border border-gold/20">
+        <h2 class="text-3xl font-bold text-gold mb-4">Shabeellada Hoose TV</h2>
+        <p class="text-gray-300 mb-4">
+            <strong>Shabeellada Hoose TV</strong> waa xarun warbaahineed oo ka shaqaysa baahinta wararka sugan, dhacdooyinka gudaha dalka iyo dibadda, iyo keydinta aqoonta iyo taariikhda gobolka.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gold mt-6 mb-2">Taariikhda iyo Ujeeddada</h3>
+        <p class="text-gray-300 mb-4">
+            Waxaa la aas-aasay si ay u noqoto muraayad ay ku daawadaan bulshada ku nool Shabeellada Hoose iyo guud ahaan Soomaaliya, iyada oo tabineysa xaqiiqooyinka taagan.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gold mt-6 mb-2">Adeegyada</h3>
+        <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Wararka iyo barnaamijyada TV-ga.</li>
+            <li>Baahinta dhacdooyinka bulshada iyo siyaasadda.</li>
+            <li>Diiwaangelinta iyo keydinta xogaha muhiimka ah.</li>
+        </ul>
+    </main>
+
+</body>
+</html>
