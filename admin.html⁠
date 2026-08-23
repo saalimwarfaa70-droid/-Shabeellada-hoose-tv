@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabeellada Hoose TV - Admin Panel</title>
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f7f6; padding: 20px; }
+        .admin-box { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { color: #333; margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #28a745; color: white; border: none; padding: 12px 20px; font-size: 16px; border-radius: 4px; cursor: pointer; width: 100%; }
+        button:hover { background: #218838; }
+        #status { margin-top: 15px; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="admin-box">
+        <h2>Ku dar War Cusub</h2>
+        <form id="newsForm">
+            <label for="title">Ciwaanka Warka:</label>
+            <input type="text" id="title" required placeholder="Geli ciwaanka warka...">
+
+            <label for="youtubeUrl">YouTube Link (tusaale: https://youtu.be/...):</label>
+            <input type="text" id="youtubeUrl" required placeholder="Geli link-ga YouTube...">
+
+            <button type="submit" id="submitBtn">Soo Geli Warka</button>
+        </form>
+        <p id="status"></p>
+    </div>
+
+    <script>
+        // Ku beddel furayaashaada saxda ah ee Supabase
+        const SUPABASE_URL = 'HALKAAN_GELI_SUPABASE_URL_KAAGA';
+        const SUPABASE_ANON_KEY = 'HALKAAN_GELI_SUPABASE_ANON_KEY_KAAGA';
+        
+        const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        document.getElementById('newsForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('status');
+            
+            const title = document.getElementById('title').value;
+            const youtubeUrl = document.getElementById('youtubeUrl').value;
+
+            btn.disabled = true;
+            btn.textContent = 'Waa la soo gelinayaa...';
+
+            let embedUrl = youtubeUrl;
+            if (youtubeUrl.includes('youtu.be/')) {
+                const videoId = youtubeUrl.split('youtu.be/')[1].split('?')[0];
+                embedUrl = `https://www.youtube.com/embed/${videoId}`;
+            } else if (youtubeUrl.includes('watch?v=')) {
+                const videoId = youtubeUrl.split('watch?v=')[1].split('&')[0];
+                embedUrl = `https://www.youtube.com/embed/${videoId}`;
+            }
+
+            const { data, error } = await supabaseClient
+                .from('news')
+                .insert([{ title: title, youtube_url: embedUrl }]);
+
+            if (error) {
+                status.style.color = 'red';
+                status.textContent = 'Khalad ayaa dhacay: ' + error.message;
+                btn.disabled = false;
+                btn.textContent = 'Soo Geli Warka';
+            } else {
+                status.style.color = 'green';
+                status.textContent = 'Si guul leh ayaa loo diiwaan geliyay warka!';
+                document.getElementById('newsForm').reset();
+                btn.disabled = false;
+                btn.textContent = 'Soo Geli Warka';
+            }
+        });
+    </script>
+</body>
+</html>
