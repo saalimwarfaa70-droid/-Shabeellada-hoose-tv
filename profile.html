@@ -1,85 +1,166 @@
-
 <!DOCTYPE html>
 <html lang="so">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salim Hassan Buralle (Warfaa) - Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Profile - Shabeellada Hoose TV</title>
+    <!-- FontAwesome Icons for Social Media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .gold-border { border-color: #D4AF37; }
-        .navy-bg { background-color: #0B132B; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .main-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1877F2;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        p.bio {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #12161f;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            opacity: 0.9;
+        }
+        /* Footer & Social Media Styles */
+        .sh-footer-social {
+            background-color: #12161f;
+            color: #ffffff;
+            padding: 40px 20px 20px 20px;
+            margin-top: 40px;
+        }
+        .sh-footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #2a3242;
+        }
+        .sh-footer-brand h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .sh-footer-brand p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin: 0;
+        }
+        .sh-footer-links {
+            display: flex;
+            gap: 15px;
+        }
+        .sh-footer-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .sh-footer-btn.facebook { background-color: #1877F2; }
+        .sh-footer-btn.youtube { background-color: #FF0000; }
+        .sh-footer-btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .sh-footer-bottom {
+            max-width: 1100px;
+            margin: 20px auto 0 auto;
+            text-align: center;
+            font-size: 13px;
+            color: #64748b;
+        }
+        @media (max-width: 768px) {
+            .sh-footer-container { flex-direction: column; align-items: flex-start; }
+            .sh-footer-links { width: 100%; flex-direction: column; }
+            .sh-footer-btn { justify-content: center; }
+        }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100 font-sans leading-relaxed">
+<body>
 
-    <!-- Header -->
-    <header class="navy-bg p-6 border-b gold-border border-opacity-30 text-center">
-        <h1 class="text-3xl font-bold text-[#D4AF37]">Salim Hassan Buralle (Warfaa)</h1>
-        <p class="text-sm uppercase tracking-widest text-gray-400">Hogaamiye & Aqoonyahan | Leader & Academic</p>
-    </header>
-
-    <main class="max-w-4xl mx-auto p-6 my-8">
+    <!-- Qeybta Guud ee Profile-ka -->
+    <div class="main-container">
+        <!-- Sawirka Profile-ka oo toos u soo jiidanaya IMG_9254.jpeg -->
+        <img src="IMG_9254.jpeg" alt="Sawirka Profile-ka" class="profile-img">
         
-        <!-- Sawirkaaga -->
-        <div class="flex justify-center mb-8">
-            <img src="salim.jpg" alt="Salim Hassan Buralle (Warfaa)" class="w-48 h-48 rounded-full object-cover border-4 gold-border shadow-xl">
-        </div>
+        <h1>Shabeellada Hoose TV</h1>
+        <p class="bio">Ku soo dhawoow bogga gaarka ah. Waa xarunta wararka, barnaamijyada iyo dhacdooyinka gobolka Shabeellada Hoose iyo guud ahaan dalka.</p>
+        
+        <a href="index.html" class="back-link">Ku noqo Bogga Hore</a>
+    </div>
 
-        <!-- Bio Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Personal Info -->
-            <div class="bg-gray-900 p-6 rounded-2xl border gold-border border-opacity-20">
-                <h2 class="text-xl font-bold text-[#D4AF37] mb-4">Macluumaadka Guud / Personal Details</h2>
-                <ul class="space-y-3 text-sm">
-                    <li><strong>Magaca / Name:</strong> Salim Hassan Buralle Cali (Warfaa)</li>
-                    <li><strong>Hooyada / Mother:</strong> A’isha Jeylni Hussein Hassan</li>
-                    <li><strong>Dhalasho / DOB:</strong> 1/August/1993</li>
-                    <li><strong>Goobta / Birthplace:</strong> Galweyn, Shabeellada Hoose</li>
-                </ul>
-            </div>
-
-            <!-- Education -->
-            <div class="bg-gray-900 p-6 rounded-2xl border gold-border border-opacity-20">
-                <h2 class="text-xl font-bold text-[#D4AF37] mb-4">Waxbarashada / Education</h2>
-                <ul class="space-y-2 text-xs">
-                    <li>🎓 <strong>2026:</strong> Master of IR - Barawa International University</li>
-                    <li>🎓 <strong>2024:</strong> Bachelor of HRM - Barawa International University</li>
-                    <li>🎓 <strong>2020:</strong> Master of Conflict & Resolution - Stanford University, Kampala</li>
-                    <li>🎓 <strong>2017:</strong> Bachelor of Public Administration - Daarusalaam University</li>
-                    <li>🎓 <strong>2013:</strong> High School - Abukar Alsadiq, Marko</li>
-                    <li>🎓 <strong>2009:</strong> Primary School - Galweyn Primary</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Political Career -->
-        <div class="mt-8 bg-gradient-to-r from-navy to-gray-900 p-8 rounded-2xl border gold-border border-opacity-20 text-center">
-            <h2 class="text-2xl font-bold text-[#D4AF37] mb-4">Waaya-nololeedka / Career</h2>
-            <p class="text-lg italic">"Sanadkii 2019, waxaa loo magacaabay Guddoomiye Ku-xigeenka Koowaad ee Degmada Marka."</p>
-            <p class="text-gray-400 mt-2">In 2019, he was appointed as the First Deputy Commissioner of Marka District.</p>
-        </div>
-
-        <div class="text-center mt-8">
-            <a href="index.html" class="px-6 py-2 bg-[#D4AF37] text-[#050B14] rounded-full font-bold hover:bg-yellow-500 transition">Ku noqo Bogga Hore</a>
-        </div>
-    </main>
-
-</body>    <!-- Qeybta Hoose ee Baraha Bulshada -->
+    <!-- Qeybta Hoose ee Baraha Bulshada (Footer Social Widget) -->
     <footer class="sh-footer-social">
-        <div class="sh-footer-container" style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding-bottom:30px; border-bottom:1px solid #2a3242;">
+        <div class="sh-footer-container">
             <div class="sh-footer-brand">
-                <h3 style="color:#ffffff; font-size:20px; margin-bottom:8px;">Shabeellada Hoose TV</h3>
-                <p style="color:#94a3b8; font-size:14px; margin:0;">Wararka iyo dhacdooyinka ugu dambeeyay kala soco barasheenna bulshada.</p>
+                <h3>Shabeellada Hoose TV</h3>
+                <p>Wararka iyo dhacdooyinka ugu dambeeyay kala soco barasheenna bulshada.</p>
             </div>
-            <div class="sh-footer-links" style="display:flex; gap:15px;">
-                <a href="https://www.facebook.com/share/12KqG5v5Z5S/" target="_blank" style="background:#1877F2; color:white; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:600; display:flex; align-items:center; gap:10px;">Facebook</a>
-                <a href="https://youtube.com/@shhoosetv?si=2z6e-Tz5_h0qY7y_" target="_blank" style="background:#FF0000; color:white; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:600; display:flex; align-items:center; gap:10px;">YouTube</a>
+            
+            <div class="sh-footer-links">
+                <!-- Facebook Button -->
+                <a href="https://www.facebook.com/share/12KqG5v5Z5S/" target="_blank" class="sh-footer-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+
+                <!-- YouTube Button -->
+                <a href="https://youtube.com/@shhoosetv?si=2z6e-Tz5_h0qY7y_" target="_blank" class="sh-footer-btn youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
             </div>
         </div>
-        <div class="sh-footer-bottom" style="text-align:center; padding-top:20px; color:#64748b; font-size:13px;">
+        
+        <div class="sh-footer-bottom">
             <p>&copy; 2026 Shabeellada Hoose TV. Xuquuqda ay dhowran tahay.</p>
         </div>
     </footer>
 
+</body>
 </html>
