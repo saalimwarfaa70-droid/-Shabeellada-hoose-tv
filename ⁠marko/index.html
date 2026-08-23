@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xaalad Kacsan oo ka Taagan Shabeellada Hoose - Marko</title>
+    <style>
+        :root {
+            --primary-color: #c53030;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #2d3748;
+            --text-muted: #718096;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .news-wrapper {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .news-header {
+            padding: 35px 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #1a202c;
+            line-height: 1.35;
+            margin-bottom: 15px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-muted);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .news-content {
+            padding: 30px 40px;
+        }
+
+        .lead-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .news-content p {
+            margin-bottom: 18px;
+            font-size: 16px;
+            color: var(--text-main);
+        }
+
+        .news-footer {
+            background-color: #f1f5f9;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 600px) {
+            .news-header, .news-content, .news-footer {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="news-wrapper">
+        <header class="news-header">
+            <span class="badge">DEG-DEG / SHABEELLADA HOOSE</span>
+            <h1>Xaalad Kacsan oo ka Taagan Shabeellada Hoose: Maamul Cusub oo La Wareegay Xarunta Degmada iyo Dakhligii Maanta</h1>
+            <div class="meta-info">
+                <span>📍 Gobolka Shabeellada Hoose</span>
+                <span>🕒 Wararkii ugu dambeeyay</span>
+            </div>
+        </header>
+
+        <main class="news-content">
+            <p class="lead-text">
+                Wararka haatan naga soo gaaraya gobolka Shabeellada Hoose ayaa ku warramaya in maamul cusub oo wata hanaan aqoonsi-doon ah uu maanta gacan ku dhigay xaruntii maamulka degmada.
+            </p>
+
+            <p>
+                Wararku waxay intaas ku darayaan in ciidamo taabacsan maamulkaas ay gebi ahaanba la wareegeen gacan ku haynta xarunta, iyagoo halkaas ka qabsaday warqadihii lacag-ururinta iyo dhammaan dakhligii maanta ka soo xarooday degmada.
+            </p>
+
+            <p>
+                Dhinaca kale, xaaladda magaalada ayaa ah mid xiisad wadata, iyadoo ciidamo ka tirsan maamulka cusub ay la wareegeen amniga guud, isla markaana ay saldhigga booliska geeyeen ciidamo ku labisan dareyska ciidanka booliska.
+            </p>
+
+            <p>
+                Lama oga halka ay xaaladdu saldhigan doonto saacadaha soo socda, iyadoo shacabku ay si dhow u la socdaan horumarradan cusub ee amni iyo maamul.
+            </p>
+        </main>
+
+        <footer class="news-footer">
+            <p>&copy; 2026 Wararka Shabeellada Hoose &bull; Dhamaan xuquuqda waa la dhowray.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
